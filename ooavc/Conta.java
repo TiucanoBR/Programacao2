@@ -9,10 +9,10 @@ public class Conta {
 	boolean sacar(double valor) {
 //		double saldoAlteradp = saldo-valor;
 // 		saldo = saldoAlterado
-		if (valor > saldo + limite) {
+		if (valor > this.saldo + limite) {
 			return false;
 		} else {
-			saldo = saldo - valor;
+			this.saldo = this.saldo - valor;
 			return true;
 		}
 	}

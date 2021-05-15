@@ -18,10 +18,10 @@ public class Conta2 {
 	boolean sacar(double valor) {
 //		double saldoAlteradp = saldo-valor;
 // 		saldo = saldoAlterado
-		if(valor > saldo + limite) {
+		if(valor > this.saldo + this.limite) {
 			return false;
 		}else {
-			saldo = saldo - valor;
+			this.saldo = this.saldo - valor;
 			return true;
 		}
 	}
