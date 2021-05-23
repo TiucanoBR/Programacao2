@@ -9,13 +9,17 @@ public class Conta3 {
 	double saldo;
 	double limite;
 
-	Conta3(int numero, String nome, double saldo, double limite) {
+	public Conta3(int numero, String nome, double saldo, double limite) {
 		this.numero = numero;
 		this.cliente = new Cliente();
 		this.cliente.nome = nome;
 		this.saldo = saldo;
 		this.limite = limite;
 		contadorContas++;
+	}
+
+	public Conta3() {
+
 	}
 
 	public int getcontadorContas() {
@@ -32,13 +36,28 @@ public class Conta3 {
 			return true;
 		}
 	}
-
+	
+	public void setNumero(int numero) {
+		this.numero = numero;
+		
+	}
+	
 	public int getNumero() {
 		return numero;
 	}
+	
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+	
+	public double getSaldo() {
+		return saldo;
+	}
 
-	void depositar(double valor) {
+	public void depositar(double valor) {
 		saldo = saldo + valor;
 	}
+
+
 
 }
